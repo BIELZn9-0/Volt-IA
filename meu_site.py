@@ -78,7 +78,7 @@ elif st.session_state.tela_atual == "chat":
 
     # ATENÇÃO: COLOQUE SUA CHAVE AQUI
     if "client" not in st.session_state:
-        st.session_state.client = genai.Client(api_key="AIzaSyB4vw6LOk3X6W2Ud3q5CkfS0QbQZYHJeaU")
+        st.session_state.client = genai.Client(api_key="CHAVE_GOOGLE")
     if "chat" not in st.session_state:
         st.session_state.chat = st.session_state.client.chats.create(model='gemini-2.5-flash')
     if "mensagens" not in st.session_state:
